@@ -2,44 +2,44 @@
 
 const numerico = 10;
 
-if(numerico > 8){
+if (numerico > 8) {
     console.log("O numero informado é maior que 8")
 }
 
-const nomealuno =  "Juliano";
+const nomealuno = "Juliano";
 
-if(nomealuno === "Juliano"){
+if (nomealuno === "Juliano") {
     console.log("Olá Juliano");
 }
 
-if(nomealuno === "Maria"){
+if (nomealuno === "Maria") {
     console
 }
 
 // else(condição se falsa ou se a primeira não for atendida)
 
 const logado = false;
-if(logado){
+if (logado) {
     console.log("Esta logado");
-}else{
+} else {
     console.log("Não esta logado");
 }
 
 const altura = 1.70;
 
-if(altura > 1.80){
+if (altura > 1.80) {
     console.log("Essa pessoa tem mais de 1,80 de altura");
 
-}else{
+} else {
     console.log("Essa pessoa tem menos de 1,80 de altura");
 }
 
 const maioridade1 = "18 anos";
 const habilitado = true;
 
-if(maioridade1 >= 18 && habilitado === false){
+if (maioridade1 >= 18 && habilitado === false) {
     console.log("Não habilitado");
-}else{
+} else {
     console.log("Habilitado");
 }
 
@@ -47,24 +47,56 @@ if(maioridade1 >= 18 && habilitado === false){
 const cachorro = "Pastor Alemão";
 const nomedocachorro = "Zeca";
 
-if(cachorro === "Dálmata"){
-    console.log("E um dalmata"); 
-}else if(nomedocachorro === "Zeca"){
-console.log("Se chama Zeca!");
+if (cachorro === "Dálmata") {
+    console.log("E um dalmata");
+} else if (nomedocachorro === "Zeca") {
+    console.log("Se chama Zeca!");
 
-}else{
+} else {
     console.log("É um poodle");
 }
 
 
-if(1 > 2){
+if (1 > 2) {
     console.log("Teste 1 é verdadeiro");
-}else if(2 > 4 ){
+} else if (2 > 4) {
     console.log("Teste 2 é verdadeiro");
-}else if(4 < 7){
+} else if (4 < 7) {
     console.log("Teste 3 é verdadeiro");
-}else{
+} else {
     console.log("Não temos condições verdadeira");
 }
+
+// switch
+
+let idade;
+
+switch (idade) {
+    case 18:
+        console.log("O usuario é maior de idade.");
+        break;
+    case 17:
+        console.log("O usuario é menor de idade.");
+        break;
+    default:
+        console.log("Idade invalida");
+
+}
+
+let opcao = "chocolate";
+switch (opcao) {
+    case "pizza":
+        console.log("pizza chegando");
+        break;
+    case "sushi":
+        console.log("Sushi fresquinho");
+        break;
+    case "hamburguer":
+        console.log("Hamburguer suculento");
+        break;
+    default:
+        console.log("Não temos esse produto");
+}
+
 
 
