@@ -11,7 +11,7 @@ console.log(nomes[3]); //essa posição não existe (undefined)
 nomes.push("Beatriz");
 console.log(nomes);
  
-//Removendo o último elemnto do array
+//Removendo o último elemento do array
 nomes.pop();
 console.log("Beatriz foi removida " + nomes);
  
@@ -104,7 +104,46 @@ const lower = fraseB.toLocaleLowerCase();
 console.log(lower);
 
 
+// array dimanico (lista)
 
+let frutasD = [];
+frutasD.push("Maçã");
+frutasD.push("Uva");
+frutasD.push("Manga");
 
+for(let i = 0; i < frutasD.length; i++){
+    console.log("Indice" + i + ":" + frutasD[i]);
+}
 
+//array bidimensional (Matriz)
+
+let matriz = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+
+for(let b = 0; b < matriz.length; b++){
+    for (let c = 0; c < matriz[b].length; c++){
+   console.log("["+ b +"]["+ c +"] = " + matriz[b][c]);
+    }
+}
+
+// array associativo 
+
+let usuario = {
+    nome: "Ana",
+    idade: 18,
+    cidade: "São Paulo"
+};
+
+for(let chave in usuario){
+    console.log(chave + ": " + usuario[chave]);
+}
  
+// destruturar array
+
+const novoArray = ["Natália", "Eduarda", "Milena"];
+
+const [primeira, segunda, terceira] = novoArray;
+
+console.log(primeira, segunda, terceira);
