@@ -28,5 +28,3 @@ catch (error){
  }
 
 });
-
-// await espera a resposta antes de continuar

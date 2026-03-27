@@ -20,7 +20,7 @@ setInterval(exibirMensagemNova, 3000);*/
 async function esperar(segundos) {
     return new Promise((resolve) => {
         setTimeout(() =>{
-            resolve(`Esperei ${segunod} segundos.`);
+            resolve(`Esperei ${segundos} segundos.`);
         }, segundos * 1000);
     });
     
